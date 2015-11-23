@@ -4,7 +4,7 @@
     // Node/CommonJS
     module.exports = factory(
       typeof window.angular ? window.angular : require('angular'),
-      typeof window.Chart ? window.Chart : require('chart.js'));
+      typeof window.Chart ? window.Chart : require('Chart.js'));
   }  else if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['angular', 'chart'], factory);
